@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeQ - Características</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/computer-chip.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Precios.html">Precio</a></li>
+            <li><a href="Informacion.html">Informacion</a></li>
+        </ul>
+
+        <button class="register-btn-mobile">Ingresar Correo</button>
+    </div>
+
+
+    <header>
+        <div class="hmbg-menu" id="hamburger-menu">
+            <img src="images/menu.png" alt="Hamburger">
+        </div>
+
+        <div class="logo">
+            <img src="images/HomeQ Landing Page.svg" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Precios.html">Precio</a></li>
+                <li><a href="Informacion.html">Informacion</a></li>
+            </ul>
+        </nav>
+        <button class="register-btn">Ingresar Correo</button>
+    </header>
+    
+    <section class="hero-cards">
+        <h1>Características de Nuestro Producto</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/Analisis.svg" alt="Feature 1">
+                <h3>Monitoreo en Tiempo Real</h3>
+            </div>
+            <div class="card">
+                <img src="images/Pruebas.svg" alt="Feature 2">
+                <h3>Evaluación de Eficiencia de la Red</h3>
+            </div>
+            <div class="card">
+                <img src="images/OptimizarBasico.svg" alt="Feature 3">
+                <h3>Optimización Personalizada de la Red</h3>
+            </div>
+            <div class="card">
+                <img src="images/OptimizarAvanzado.svg" alt="Feature 4">
+                <h3>Optimización Avanzada de la Red</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Lista de Espera</h2>
+        <button class="register-btn">Ingresar Correo</button>
+    </section>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Ingrese Informacion</h2>
+            <form id="registerForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

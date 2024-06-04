@@ -1,0 +1,644 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5; /* Light background color for the body */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding to control header height */
+    background-color: #3498db; /* Blue background for the header */
+    color: #fff;
+    height: 80px; /* Set a fixed height for the header */
+}
+
+/* Logo styles */
+.logo img {
+    max-height: 60px; /* Adjust max height to control logo size */
+    width: auto;
+}
+
+.hmbg-menu img {
+    max-height: 60px; /* Adjust max height to control logo size */
+    width: auto;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* side menu*/
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: space-between
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.side-menu ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjust margin for spacing between items */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size for nav items */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5da5f6; /* Lighter blue for hover effect */
+}
+
+/* Register button styles */
+.register-btn {
+    padding: 10px 20px;
+    background-color: #2980b9; /* Darker blue for button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #1f77c9; /* Darker blue for hover effect */
+}
+
+.register-btn-mobile{
+    padding: 10px 20px;
+    background-color: #2980b9; /* Darker blue for button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 550px;
+}
+
+.register-btn-mobile:hover {
+    background-color: #1f77c9; /* Darker blue for hover effect */
+}
+
+/* Hero section styles */
+.hero {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background for the hero section */
+    color: #2c3e50; /* Dark gray color for the text by default */
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark gray color for the H1 */
+}
+
+.text-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666; /* Gray color for the paragraph */
+}
+
+/* Adjusting the image container */
+.image-container img {
+    max-width: 100%; /* Ensures the image scales well */
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-gamer img {
+ display: none;   
+}
+
+/* Features section styles */
+.features {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Testimonials section styles */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.testimonial-item {
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* CTA section styles */
+.cta {
+    padding: 60px 20px;
+    background-color: #3498db;
+    text-align: center;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cta .register-btn {
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+
+/* Hero section with cards */
+.hero-cards {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background for the hero section */
+    color: #2c3e50; /* Dark gray color for the text by default */
+    text-align: center;
+    height: 100vh;
+}
+
+.hero-cards h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2c3e50; /* Dark gray color for the H1 */
+}
+
+.hero-content1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.card {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slightly move the card upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth effect */
+}
+
+/* Hero section styles for pricing page */
+.hero-pricing {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background for the hero section */
+    color: #2c3e50; /* Dark gray color for the text by default */
+    text-align: center;
+    height: 100vh;
+}
+
+.hero-pricing h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2c3e50; /* Dark gray color for the H1 */
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+    
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px); /* Slightly move the card upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth effect */
+}
+
+.pricing-card .card-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.pricing-card .card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.pricing-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.pricing-card ul {
+    list-style: disc inside;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.pricing-card ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.pricing-card .register-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Hero section styles for information page */
+.hero-info {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background for the hero section */
+    color: #2c3e50; /* Dark gray color for the text by default */
+    text-align: center;
+    height: 100vh;
+    
+}
+
+.hero-info h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2c3e50; /* Dark gray color for the H1 */
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info-card {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.info-card:hover {
+    transform: translateY(-10px); /* Slightly move the card upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth effect */
+}
+
+.info-card img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.info-card .card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.info-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.modal-content input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+
+    /* index page*/
+
+    .logo {
+        padding-left: 50%;
+    }
+    
+    header nav ul {
+        display: none;
+    }
+    
+    .image-container  {
+        display: none;
+    }
+
+    .image-gamer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .image-gamer img {
+        display: block;
+        max-width: 50%; /* Ensures the image scales well */
+        height: auto;
+        border-radius: 10px;
+       
+    }
+
+    .text-container  {
+        width:80%;
+    }
+
+    .text-container h1 {
+        font-size: 26px;
+    }
+
+    .features  {
+        width:80%;
+        padding-left: 40px;
+    }
+
+    .features h2 {
+        font-size: 26px;
+        
+    }
+
+    .feature-list  {
+        width:80%;
+        align-content: normal;
+    }
+
+    .feature-item{
+        padding-bottom: 10px;
+    }
+
+    .register-btn {
+        display: none;
+    }
+
+    .testimonials h2 {
+        font-size: 26px;
+    }
+
+    .testimonial-list{
+        display: inline-block; 
+        
+    }
+
+    .testimonial-item{
+        margin-bottom: 20px;
+        
+    }
+
+    .feature-list {
+        display: inline-block;
+        
+    }
+
+   .cta {
+    display: none;
+   }
+  
+
+    
+    
+}
+
+@media (min-width: 700px){
+    .hmbg-menu, .image-gamer {
+        display: none;
+    }
+
+}

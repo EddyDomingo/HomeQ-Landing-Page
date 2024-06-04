@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeQ Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/computer-chip.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="Producto.html">Producto</a></li>
+            <li><a href="Precios.html">Precio</a></li>
+            <li><a href="Informacion.html">Informacion</a></li>
+        </ul>
+
+        <button class="register-btn-mobile">Ingresar Correo</button>
+    </div>
+
+
+    <header>
+        <div class="hmbg-menu" id="hamburger-menu">
+            <img src="images/menu.png" alt="Hamburger">
+        </div>
+        <div class="logo">
+            <img src="images/HomeQ Landing Page.svg" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Producto.html">Producto</a></li>
+                <li><a href="Precios.html">Precio</a></li>
+                <li><a href="Informacion.html">Informacion</a></li>
+            </ul>
+        </nav>
+        <button class="register-btn">Ingresar Correo</button>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="text-container">
+                <h1>HomeQ Optimiza tu Red Residencial</h1>
+                <p>Visualizamos un futuro donde cada hogar tenga acceso a 
+                    una conectividad residencial de primera clase.</p>
+                <button class="register-btn">Ingresar Correo</button>
+            </div>
+            <div class="image-container">
+                <img src="images/streamer.svg" alt="Hero Image">
+            </div>
+            <div class="image-gamer">
+                <img src="images/gamer.png" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Características del producto</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Monitoreo en Tiempo Real</h3>
+                <p>Monitorea tu red en tiempo real para identificar y 
+                    resolver congestiones de manera eficiente.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Evaluación de Eficiencia de la Red</h3>
+                <p>Realiza pruebas exhaustivas en tu red para evaluar
+                     y optimizar su eficiencia operativa.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Optimización Personalizada de la Red</h3>
+                <p>Optimiza tu red según tus necesidades específicas para maximizar 
+                    el rendimiento y la eficiencia..</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>¿Qué Dicen Nuestros Clientes?</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"Desde que empecé a usar esta aplicación, mi conexión a internet ha mejorado notablemente.
+                     Las videollamadas son más fluidas y ya no sufro interrupciones durante mis reuniones importantes.
+                    ¡Es una herramienta imprescindible para cualquier persona que trabaje desde casa!"</p>
+                <p><b>- María G., Profesionista en Home Office</b></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Esta aplicación ha llevado mi experiencia de juego y streaming a otro nivel. 
+                    Puedo optimizar mi red con solo unos clics y reducir el lag al mínimo.¡Totalmente recomendable!"</p>
+                <p><b>- Carlos R., Gamer y Streamer</b></p>
+            </div>
+        </div>
+    </section>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Ingrese Informacion</h2>
+            <form id="registerForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" onclick="openMicrosoftForm()">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Product Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Producto.html">Producto</a></li>
+            <li><a href="Precios.html">Precio</a></li>
+        </ul>
+
+        <button class="register-btn-mobile">Ingresar Correo</button>
+    </div>
+
+    <header>
+        <div class="hmbg-menu" id="hamburger-menu">
+            <img src="images/menu.png" alt="Hamburger">
+        </div>
+        <div class="logo">
+            <img src="images/HomeQ Landing Page.svg" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Producto.html">Producto</a></li>
+                <li><a href="Precios.html">Precio</a></li>
+            </ul>
+        </nav>
+        <button class="register-btn">Ingresar Correo</button>
+    </header>
+    
+    <section class="hero-info">
+        <h1>¿Por Qué Elegir Nuestro Producto?</h1>
+        <div class="hero-content">
+            <div class="card-container">
+                <div class="info-card">
+                    <img src="images/rocket.png" alt="Mejora el Rendimiento">
+                    <h3 class="card-title">Mejora el Rendimiento</h3>
+                    <p>Mejora el rendimiento de la red residencial para ofrecer una experiencia óptima.</p>
+                </div>
+                <div class="info-card">
+                    <img src="images/customer-satisfaction.png" alt="Mejorar Satisfacion">
+                    <h3 class="card-title">Experiencia Mejorada</h3>
+                    <p>Mejora la calidad de tus video-llamadas, juegos en línea y streaming en vivo.</p>
+                </div>
+                <div class="info-card">
+                    <img src="images/relax.png" alt="Simplicidad">
+                    <h3 class="card-title">Simplicidad</h3>
+                    <p>El sistema es fácil de usar sin necesidad de tener conocimiento técnico. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Lista de Espera</h2>
+        <button class="register-btn">Ingresar Correo</button>
+    </section>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Ingrese Informacion</h2>
+            <form id="registerForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
