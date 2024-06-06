@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var modal = document.getElementById('registerModal');
 
     // Get the buttons that open the modal
-    var registerBtns = document.querySelectorAll('.register-btn');
+    //var registerBtns = document.querySelectorAll('.register-btn');
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName('close-btn')[0];
